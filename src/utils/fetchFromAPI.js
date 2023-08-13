@@ -24,7 +24,6 @@ export default async function fetchWeatherData(CityName) {
     try {
         const response = await axios.request(options);
         return response.data;
-        // console.log(response.data);
     } catch (error) {
         console.error(error);
         return null;
